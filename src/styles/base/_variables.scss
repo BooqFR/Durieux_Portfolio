@@ -1,10 +1,19 @@
 /*
 * Colors
 */
-$navText: white;
+$navText: black;
+$headerBackground: white;
 
 /*
 * Font
 */
 $fontLight: 100;
 $fontBold: 800;
+
+/*
+* Breakpoints
+*/
+$mobile: 375px;
+$tablet: 768px;
+$desktop: 992px;
+$wide: 1366px;

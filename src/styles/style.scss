@@ -1,6 +1,14 @@
+/*
+* Import Base Styles
+*/
 @import './base/base';
+@import './base/section';
 @import './base/variables';
 
+/*
+* Import Components Styles
+*/
 @import './components/header';
+@import './components/masonry';
 @import './components/nav';
-@import './components/video';
+@import './components/thumbnail';

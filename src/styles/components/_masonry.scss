@@ -1,0 +1,41 @@
+/*
+* Variables
+*/
+
+/*
+* Bloc
+*/
+.masonry {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0;
+  margin: 0;
+}
+
+/*
+* Elements
+*/
+.masonry__item {
+  height: 300px;
+  line-height: 300px;
+  margin: .5rem;
+  flex: 1 0 auto;
+  overflow: hidden;
+  max-width: 100%;
+
+  @for $i from 1 through 36 { 
+    &:nth-child(#{$i}) {
+      $h: (random(400) + 80) + px;
+      width: $h;
+      min-width: 150px;
+
+      @media (max-width: $mobile) {
+        width: 100%;
+      }
+    }
+  }
+
+  @media (max-width: $mobile) {
+    margin: .5rem 0;
+  }
+}

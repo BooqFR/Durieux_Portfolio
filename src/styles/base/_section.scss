@@ -1,0 +1,34 @@
+/*
+* Variables
+*/
+$padding: 40px;
+
+/*
+* Bloc
+*/
+.section {
+    position: relative;
+    max-width: 1200px;
+    width: calc(100% - #{$padding}*2);
+    margin: 0 auto;
+    padding: $padding;
+    animation-name: fadeIn;
+    animation-duration: 2s;
+}
+
+/*
+* Elements
+*/
+
+/*
+* Animations
+*/
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
